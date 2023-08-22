@@ -14,4 +14,4 @@ SELECT DueDate, Title, FirstName, Email
 FROM Loans
 LEFT JOIN Patrons ON Patrons.PatronID = Loans.PatronID
 LEFT JOIN Books ON Books.BookID = Loans.BookID
-WHERE DueDate = '2022-07-13';
+WHERE DueDate = '2022-07-13' AND ReturnedDate IS NULL;
